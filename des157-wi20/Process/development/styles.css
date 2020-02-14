@@ -1,0 +1,43 @@
+h1{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+svg{
+    margin-left: 280px;
+}
+
+p{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 63%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-family: 'Inria Serif', serif;
+
+}
+
+div{
+    width: 70%;
+    margin: auto;
+    background: #E6DEE8;
+    padding-top: 40px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    width: 63%;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    margin-top: 30px;
+    background: rgb(251,88,156);
+    background: linear-gradient(66deg, rgba(251,88,156,1) 0%, rgba(180,120,221,1) 27%, rgba(211,227,241,1) 61%, rgba(255,196,235,1) 100%);;
+}
