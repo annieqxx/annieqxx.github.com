@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Annie's Madlib</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Journal</h1>
+
+        <form id="myform">
+                <label for="Name">Name:</label>
+                <input type="text" placeholder="noun" id="noun1">
+                <label for="Weather">Weather: </label>
+                <input type="text" placeholder="adjective" id="adjective">
+                <label for="date">Date: </label>
+                <input type="text" placeholder="MM/DD/YYYY" id="date">
+                <label for="met">Who I met: </label>
+                <input type="text" placeholder="noun" id="noun2">
+                <label for="done">What did I do: </label>                
+                <input type="text" placeholder="verb" id="verb">
+                <input type="submit" value="View your daily journal!" id="submit">
+
+        </form>
+    </div>
+
+    <div class="invisible" id="madlib">
+        <p>Madlib will go here! The class is set initially to invisible, which is set in the styles above to display: none. When the mad lib is submitted, this class is swapped. You could change the styling a lot. Add a css transition to have the mad lib fade in, or fly in or have some other effect.
+        </p>
+    </div>
+
+    <footer>
+            <a href="../../index.html">Portal Page</a>
+            <!-- <a href="&#120;&#097;&#113;&#105;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a> -->
+            <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+     </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

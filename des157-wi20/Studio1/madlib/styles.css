@@ -1,0 +1,64 @@
+input {display: block; margin-bottom: 20px;}
+.invisible { display: none;}
+.visible {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    background-color: rgb(241, 163, 174);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body{
+    background-image: url("DES_studio_1_Background_.png");
+    background-size: cover;
+    background-position-y: -200px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    color: rgba(156, 78, 180, 0.925);
+}
+
+label{
+    font-family: 'Indie Flower', cursive;
+    font-size: 15pt;
+}
+
+#submit{
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(94, 94, 94);
+}
+
+.container{
+    padding-left: 250px;
+    padding-top: 40px;
+    display: block;
+    
+}
+
+#myform{
+    padding: 30px;
+    width: 170px;
+    border-radius: 25px;
+    background-color: #E6DEE8;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(157, 139, 201);
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
