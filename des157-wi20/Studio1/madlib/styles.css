@@ -1,3 +1,11 @@
+body{
+    background-image: url("DES_studio_1_Background_.png");
+    background-size: cover;
+    background-position-y: -200px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
 input {display: block; margin-bottom: 20px;}
 .invisible { display: none;}
 .visible {
@@ -13,13 +21,6 @@ input {display: block; margin-bottom: 20px;}
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-body{
-    background-image: url("DES_studio_1_Background_.png");
-    background-size: cover;
-    background-position-y: -200px;
-    background-position-x: center;
-    background-repeat: no-repeat;
-}
 
 h1{
     font-family: 'Indie Flower', cursive;
