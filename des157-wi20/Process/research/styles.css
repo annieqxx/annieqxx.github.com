@@ -26,6 +26,10 @@ p{
 
 }
 
+#citation{
+    padding-bottom: 5px
+}
+
 article{
     width: 70%;
     margin: auto;
