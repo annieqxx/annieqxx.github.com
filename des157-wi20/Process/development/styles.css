@@ -7,6 +7,21 @@ h1{
     color: plum;
 }
 
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+h2{
+    color: plum;
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: center;
+    font-family : 'Bungee Inline', sans-serif;
+}
+
 svg{
     margin-left: 280px;
 }
