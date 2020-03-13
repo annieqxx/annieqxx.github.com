@@ -14,17 +14,6 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="dropdown">
-            <img id="menu" src="images/dropdown-menu-icon-16.jpg" alt="dropdown" width="40" height="50">
-            <ul class="dropdown-content">
-                <li><a href="../../../index.html">Portal Page</a></li>
-                <li><a href="&#120;&#097;&#113;&#105;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a></li>
-                <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></li>
-                <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
-            </ul>
-        </div>
-    </header>
     <section id = "page1">
         <article>
             <p id="intro">Welcome to the Health Care and Wellness site! 
@@ -113,13 +102,13 @@
     <section id="subPgcupping">
         <div id= "CuppingPg" class="visible">
             <img src="images/cupping.png" alt="cupping" width="300" height="300">
-            <p id="cupping">Cupping is a type of alternative therapy that originated in China.<br>
+            <p id="cupping" class="invisible">Cupping is a type of alternative therapy that originated in China.<br>
                 It involves placing cups on the skin to create suction.<br> 
                 The suction may facilitate healing with blood flow. <br>
                 Proponents also claim the suction helps facilitate the flow of “qi” in the body.</p>
-            <button id="cuppingButton">Back To Options</button>
-            <button id="cuppingMain">Back To Main Menu for Seniors</button>
-            <button id="cuppingHome">Back To Home</button>
+            <button id="cuppingButton" class="invisible">Back To Options</button>
+            <button id="cuppingMain" class="invisible">Back To Main Menu for Seniors</button>
+            <button id="cuppingHome" class="invisible">Back To Home</button>
         </div>
     </section>
 
@@ -170,11 +159,15 @@
             </div>
         </div>
 
-        <div id="fat">
+        <div id="fats">
             <p id="fat">Fat: </p>
-            
+            <input type="text" placeholder="Olive oil, Rice, Noodle, and etc." id="fat1">          
         </div>
 
+        <img src="images/Final Project Drawings People-08.png" alt="Empty plate" width="200" height="200" id="plate" class="plate">
+        <img src="images/full_plate-09.png" alt="Full plate" width="200" height="200" class="invisible">
+        <input type="submit" value="Submit" id="submit">
+        <span class="invisible">Summary paragraphy goes here</span>
         <p id="ending">To Be Continued...</p>
     </section>
 

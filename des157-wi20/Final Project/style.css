@@ -15,12 +15,12 @@ body{
 }
 
 /***** header *****/
-.dropdown {
+/* .dropdown {
     display: inline-block;
     position: fixed;
     top: -5px;
     left: 5px;
-    /* background: #ffffff; */
+   
 }
   
 .dropdown-content {   
@@ -50,11 +50,11 @@ body{
 
 .dropdown-contentShow li a:hover{
     color: plum;
-}
+/* } */
 
 a{
     text-decoration: none;
-}
+} 
 
 /* *********** page 1 ************* */
 
@@ -305,7 +305,7 @@ div#dropHere{
 .button, #cuppingHome, #cuppingMain, #cuppingButton{
     background-color: #2B7976;
     color: white;
-    display: block;
+    /* display: block; */
     padding: 5px;
     width: 15%;
     margin: auto;
@@ -355,14 +355,7 @@ div#dropHere{
     flex: 1;
 }
 
-#ending{
-    width: 200px;
-    color: #2B7976;
-    font-size: 25px;
-    position: relative;
-    left: 1000px;
-    top: 130px;
-}
+
 
 /************** health page ***********/
 #eatHealthy img{
@@ -397,9 +390,55 @@ div#dropHere{
     flex: 1;
 }
 
+#fats{
+    display: flex;
+    
+}
+
+#fat{
+    font-size: 28px;
+    color: #2B7976;
+    text-align: center;
+    flex: 1;
+}
+
+#fat1{
+    flex: 3;
+    width: 100px;
+}
+
 #imgCarb{
     flex: 3;
 }
+
+#ending{
+    width: 200px;
+    color: #2B7976;
+    font-size: 25px;
+    position: relative;
+    left: 1000px;
+    top: 130px;
+}
+
+.plate{
+    margin-top: 10px;
+}
+
+#submit{
+    padding: 5px;
+    border-radius: 28px;
+}
+
+.summary{
+    display: inline;
+    margin-left: 20px;
+    background-color: #2B7976;
+    color: white;
+    border-radius: 28px;
+    padding: 10px;
+   
+}
+
 
 /***** Footer ******/
 footer{
