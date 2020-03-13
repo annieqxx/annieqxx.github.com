@@ -1,0 +1,414 @@
+*{
+    margin:0;
+    padding:0;
+  }
+body{
+    background-color: #CAF3F8;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+/***** header *****/
+.dropdown {
+    display: inline-block;
+    position: fixed;
+    top: -5px;
+    left: 5px;
+    /* background: #ffffff; */
+}
+  
+.dropdown-content {   
+    display: none;
+   
+}
+  
+.dropdown-contentShow {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    background-color: #f9f9f9;
+    list-style-type: none;
+    height: 200px;
+}
+
+.dropdown-contentShow li a{
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    color: gray;
+}
+
+.dropdown-contentShow li a:hover{
+    color: plum;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* *********** page 1 ************* */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 768px;
+}
+
+article{
+    width: 100%;
+    height: 100%;
+}
+
+button#start{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #EA9F9F;
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "open sans";
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 30%;
+}
+
+#start a{
+    color: white;
+}
+
+p#intro{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: #707070;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#page1{
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }}
+
+/* *********** page 2 ************* */
+
+#page2 p{
+    color: #2B7976;
+    margin-left: 100px;
+    padding-bottom: 50px;
+}
+
+#imgs img{
+    padding-left: 200px;
+    padding-right: 60px;
+}
+
+#describ{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#describ p{
+    flex: 1;
+    /* text-align: center; */
+    padding-top: 20px;
+}
+
+/* *********** page 3 ************* */
+
+#page3 p{
+    color: #2B7976;
+}
+
+#container3{
+    display: flex;
+    height: 207px;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3 #img2{
+    text-align: center;
+    flex: 1;
+    /* padding: 40px; */
+}
+
+#par3{
+    align-self: auto;
+    flex: 1;
+    padding: 30px;
+    margin-right: 100px;
+}
+
+#selection3{
+    flex: 1;
+}
+
+#selection3 p{
+    color: #2B7976;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+#selection3 button{
+    display: block;
+    background-color: #8EEAD2;
+    color: #2B7976;
+    border: solid 1px black;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 100px;
+}
+
+/* *********** page 4 ************* */
+#Healthimgs{
+    display: flex;
+}
+
+img{
+    flex: 1;
+    padding: 50px;
+}
+
+#Healthimgs #thirdCon{
+    width: 300px;
+    height: 300px;
+    background-color: #BEECF2;
+    flex: 1;
+    margin: 50px;
+    color: #2B7976;
+}
+
+#context{
+    display: flex;
+}
+
+#context p{
+    flex: 1;
+    color: #2B7976;
+    text-align: center;
+}
+
+/* *********** subPage Therapy ************* */
+#dragStart{
+    display: flex;
+}
+
+div#dropHere{
+    flex: 1;
+    border: solid 1px black;
+}
+
+#drag{
+    color: #2B7976;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+#dragEnd{
+    text-align: center;
+}
+
+#parthreapy{
+    color: #2B7976;
+    padding: 0;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+/* *********** subPage cupping ************* */
+#CuppingPg{
+    text-align: center;
+}
+
+#cupping{
+    color: #2B7976;
+    text-align: left;
+    padding: 0;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.button, #cuppingHome, #cuppingMain, #cuppingButton{
+    background-color: #2B7976;
+    color: white;
+    display: block;
+    padding: 5px;
+    width: 15%;
+    margin: auto;
+    border-radius: 28px;
+    box-shadow: whitesmoke;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* *********** worker page ************* */
+
+#parW{
+    color: #2B7976;
+}
+
+#container{
+    display: flex;
+    height: 207px;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #imgPeople{
+    text-align: center;
+    flex: 1;
+    /* padding: 40px; */
+}
+
+#parW{
+    align-self: auto;
+    flex: 1;
+    padding: 30px;
+    margin-right: 100px;
+}
+
+/* *********** worker subpage ************* */
+
+#descri{
+    display: flex;
+}
+
+#descri p{
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #2B7976;
+    flex: 1;
+}
+
+#ending{
+    width: 200px;
+    color: #2B7976;
+    font-size: 25px;
+    position: relative;
+    left: 1000px;
+    top: 130px;
+}
+
+/************** health page ***********/
+#eatHealthy img{
+    vertical-align: middle;
+}
+
+#containerProteins{
+    display: flex;
+}
+
+#proteins{
+    font-size: 28px;
+    color: #2B7976;
+    text-align: center;
+    flex: 1;
+}
+
+#images{
+    flex: 3;
+    /* margin-left: 200px; */
+}
+
+
+#containerCarbon{
+    display: flex;
+}
+
+#carbs{
+    font-size: 28px;
+    color: #2B7976;
+    text-align: center;
+    flex: 1;
+}
+
+#imgCarb{
+    flex: 3;
+}
+
+/***** Footer ******/
+footer{
+    text-align: center;
+    padding: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+footer a{
+    padding: 10px;
+}
