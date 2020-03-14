@@ -11,9 +11,9 @@ par3Trigger.addEventListener('click', function(){
     parHide.setAttribute('class', 'invisible');
     divshow.setAttribute('class', 'visible')    
     divshow.style.opacity = op;
-    setInterval(function(){
+    let tim = setInterval(function(){
         if (op >= 1){
-            clearInterval(timer);
+            clearInterval(tim);
         }
         divshow.style.opacity = op;
         divshow.style.filter = 'alpha(opacity=' + op * 100 + ")";
@@ -32,9 +32,9 @@ img.addEventListener('mouseover', function(){
         element.setAttribute('class', 'visible');
         let op = 0.1;
         element.style.opacity = op;
-        setInterval(function(){
+        let time = setInterval(function(){
             if (op >= 1){
-                clearInterval(timer);
+                clearInterval(time);
             }
             element.style.opacity = op;
             element.style.filter = 'alpha(opacity=' + op * 100 + ")";
@@ -63,7 +63,17 @@ function drop(ev) {
   }
 
   for (let index = 0; index < appear.length; index++) {
-    appear[index].setAttribute('class', 'visible')    
+    appear[index].setAttribute('class', 'visible')  
+    let opp = 0.1;
+    appear[index].style.opacity = opp;
+    let timer  = setInterval(function(){
+        if (opp >= 1){
+            clearInterval(timer);
+        }
+        appear[index].style.opacity = opp;
+        appear[index].style.filter = 'alpha(opacity=' + opp * 100 + ")";
+        opp += opp * 0.1;
+    }, 10)  
   }
   
 //   var data = ev.dataTransfer.getData("text");
