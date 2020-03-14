@@ -83,9 +83,10 @@
 
     <section id="subPgtherapy">
         <div id="dragStart" class="visible">
-            <img src="images/Final Project Drawings People-04.png" alt="older people" title="drag me" class="visible">
+            <!-- <div draggable="true" style="border: 1px solid black;"> -->
+            <img src="images/Final Project Drawings People-04.png" alt="older people" title="drag me" draggable="true" ondragstart="drag(event)" id = "olderPeopel" class="visible">
             <img src="images/Final Project Drawings People-06.png" alt="parallel bars" width="300" height="300" class="visible">
-            <div id="dropHere" class="visible">Drag and drop to here</div>       
+            <div id="dropHere" ondrop="drop(event)" ondragover="allowDrop(event)" class="visible">Drag and drop to here</div>       
         </div>
         <p id="drag" class="visible">Drag the person to help him pass the parallel bars...</p>
         <div id= "dragEnd" class="invisible">
@@ -148,6 +149,13 @@
                 <img src="images/Final Project Drawings People-13.png" alt="steak" width="80" height="80">
                 <img src="images/Final Project Drawings People-14.png" alt="milk" width="80" height="80">
                 <img src="images/Final Project Drawings People-15.png" alt="egg" width="80" height="90">
+                <div id="exp">
+                <!-- <span> chicken</span>
+                <span> fish</span>
+                <span> steak</span>
+                <span> milk</span>
+                <span> eggs</span> -->
+                </div>
             </div>
         </div>
 
@@ -156,6 +164,8 @@
             <div id="imgCarb">
                 <img src="images/Final Project Drawings People-09.png" alt="vegi" width="80" height="80">
                 <img src="images/Final Project Drawings People-10.png" alt="fruit" width="80" height="80">       
+                <!-- <p> vegi<span> fruits</span></p> -->
+                
             </div>
         </div>
 

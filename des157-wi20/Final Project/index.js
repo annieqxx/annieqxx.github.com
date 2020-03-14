@@ -45,7 +45,31 @@ img.addEventListener('mouseover', function(){
 
 /********Physical Therapy pg****** */
 
+function allowDrop(ev) {
+  ev.preventDefault();
+}
 
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+let olderAdult = document.querySelectorAll("#subPgtherapy .visible")
+let appear = document.querySelectorAll("#subPgtherapy .invisible")
+
+function drop(ev) {
+  ev.preventDefault();
+  for (let index = 0; index < olderAdult.length; index++) {
+    olderAdult[index].setAttribute('class', 'invisible')    
+  }
+
+  for (let index = 0; index < appear.length; index++) {
+    appear[index].setAttribute('class', 'visible')    
+  }
+  
+//   var data = ev.dataTransfer.getData("text");
+//   ev.target.appendChild(document.getElementById(data));
+
+}
 
 /************Eat healthy page */
 
