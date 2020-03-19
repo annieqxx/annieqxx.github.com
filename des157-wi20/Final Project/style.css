@@ -430,7 +430,8 @@ div#dropHere{
 }
 
 .summary{
-    display: inline;
+    display: inline-block;
+    line-height: 1.5;
     margin-left: 20px;
     background-color: #2B7976;
     color: white;

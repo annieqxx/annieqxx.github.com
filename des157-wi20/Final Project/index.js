@@ -79,7 +79,7 @@ function drop(ev) {
     }, 10)  
 
   }
-  
+
     plate.setAttribute('class', 'invisible')
     hidePlate.setAttribute('class', 'plate')
 
@@ -89,20 +89,78 @@ function drop(ev) {
 
 let chicken = document.querySelector("#chicken")
 let chickenName = chicken.getAttribute('id')
-console.log(chickenName)
 
-// document.getElementById("submit").addEventListener('click', function(){
-//     let fatData = document.querySelectorAll("input[type=text]");
+let fish = document.querySelector("#fish")
+let fishName = fish.getAttribute('id')
 
-//     console.log("lala")
-// })
+let steak = document.querySelector('#steak')
+let steakName = steak.getAttribute('id')
+
+let milk = document.querySelector('#milk')
+let milkName = milk.getAttribute('id')
+
+let egg = document.querySelector('#egg')
+let eggName = egg.getAttribute('id')
+
+let vegetable = document.querySelector("#vegetable")
+let vegiName = vegetable.getAttribute('id')
+
+let fruits = document.querySelector("#fruit")
+let fruitNme = fruits.getAttribute('id')
+
+let proteinLs = [];
+let carb = [];
+
+let isClick = false;
+
+chicken.addEventListener('click', function(){
+    proteinLs.push(chickenName);
+    console.log(proteinLs)
+})
+
+fish.addEventListener('click', function(){
+    proteinLs.push(fishName);
+    console.log(proteinLs)
+})
+
+steak.addEventListener('click', function(){
+    proteinLs.push(steakName);
+    console.log(proteinLs)
+})
+
+milk.addEventListener('click', function(){
+    proteinLs.push(milkName);
+    console.log(proteinLs)
+})
+
+egg.addEventListener('click', function(){
+    proteinLs.push(eggName);
+    console.log(proteinLs)
+})
+
+vegetable.addEventListener('click', function(){
+    carb.push(vegiName);
+    console.log(carb)
+})
+
+fruit.addEventListener('click', function(){
+    carb.push(fruitNme);
+    console.log(carb)
+})
+
+
+
+
 let button = document.getElementById("submit")
 console.log(button)
 button.addEventListener('click', function(){
     
     let fatData = document.querySelector("input[type=text]");
     console.log(fatData.value)
-        
+    document.querySelector("#eatHealthy .summary").innerHTML = `You selected ${proteinLs.length} types of protein foods, they are <strong> ${proteinLs}</strong>. <br>
+    ${carb.length} types of carbon foods, they are <strong> ${carb}</strong>. <br>
+    And <strong> ${fatData.value} </strong> as your fat.
+    <br> Make sure you have <strong> 2/3 </strong>amount of ${carb}, <strong>1/3 </strong>amount of ${proteinLs}, and <strong>only a bit</strong> ${fatData.value}`;
 })
 
 
