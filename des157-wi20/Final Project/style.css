@@ -69,7 +69,7 @@ article{
     height: 100%;
 }
 
-button#start{
+#start{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -163,7 +163,7 @@ p#intro{
     padding-bottom: 50px;
 }
 
-#imgs img{
+#imgs1 img, #imgs img{
     padding-left: 200px;
     padding-right: 60px;
 }
@@ -212,12 +212,12 @@ p#intro{
 
 #selection3 p{
     color: #2B7976;
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     padding-bottom: 20px;
 }
 
-#selection3 button{
+#selection3 button, #sel{
     display: block;
     background-color: #8EEAD2;
     color: #2B7976;
@@ -226,6 +226,7 @@ p#intro{
     padding: 20px;
     margin: 20px;
     margin-left: 100px;
+    text-align: center;
 }
 
 /* *********** page 4 ************* */
@@ -310,7 +311,7 @@ div#dropHere{
     width: 15%;
     margin: auto;
     border-radius: 28px;
-    box-shadow: whitesmoke;
+    box-shadow: 1px 1px whitesmoke;
     margin-top: 10px;
     font-size: 12px;
 }
