@@ -169,9 +169,14 @@ button.addEventListener('click', function(){
 /***********Scroll ***********/
 const navLinks = document.querySelectorAll('a');
 
-navLinks.forEach(function(eachLink){
-    eachLink.addEventListener('click', smoothScroll);
-})
+// navLinks.forEach(function(eachLink){
+//     eachLink.addEventListener('click', smoothScroll);
+//     console.log(navLinks);
+// })
+
+for (let index = 0; index < navLinks.length-4; index++) {
+    navLinks[index].addEventListener('click', smoothScroll);
+}
 
 function smoothScroll(event){
     event.preventDefault();
