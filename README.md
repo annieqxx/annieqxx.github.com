@@ -1,4 +1,4 @@
 # githubprofile
 Github Profile;; 
 Initially forked from Des 157 professor for the class assignment, and after the class eited it for my own portfolio.
-Refer to annieqxx.com 
+Refer to https://annieqxx.com/ 
