@@ -1,2 +1,2 @@
-# githubprofile
-Github Profile;; initially forked from Des 157 professor for the class assignment, and after the class **eited it for my own portfolio**.
+# Github Profile
+Github Profile;; 
