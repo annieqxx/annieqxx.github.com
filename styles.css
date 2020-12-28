@@ -15,6 +15,58 @@ img {
 	max-width:100%;
 }
 
+header{
+	color: white;
+	text-decoration: none;
+	width: 95%;
+	height: 80px;
+	margin:auto;
+	display: flex;
+}
+
+header div{
+	flex: 1;
+	text-align: center;
+	padding-top: 30px;
+	text-decoration: none;
+}
+
+header div a{
+	text-decoration: none;
+	color: white;
+}
+
+#headername{
+	text-align: left;
+	padding-left: 80px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 25px;
+}
+
+#meun a{
+	padding-right: 10px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#socialmedia{
+	padding-top: 25px;
+	text-align: right;
+	padding-right: 80px;
+}
+
+#socialmedia a{
+	padding-left: 15px;
+	text-decoration: underline;
+}
+
+i{
+	color: white;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
 body {
   background: #111;
@@ -90,6 +142,10 @@ body {
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
+}
+
+#projects{
+	height: 100%;
 }
 
 /************* End CSS RESET **************/
