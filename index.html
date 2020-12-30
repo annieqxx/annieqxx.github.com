@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="sr">
 <head>
 <meta charset="UTF-8">
 <title>Annie Qin's Portfolio</title>
@@ -12,51 +12,88 @@
 <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
 <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 <link href="styles.css" rel="stylesheet">
 
 <!-- Needed for mobile devices to not zoom out automatically-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 </head>
 
 <body>
     <header>
-        <div id="headername">Annie Qin</div>
+        <div id="headername"><a href="#landing">Annie Qin</a></div>
         <div id="meun">
             <a href="#projects">Projects</a>
-            <a href="about_section">About</a>
+            <a href="about_section/index.html">About</a>
         </div>
         <div id="socialmedia">
-            <a href="#"><i class="fab fa-2x fa-github"></i></a>
-            <a href="#"><i class="fab fa-2x fa-linkedin"></i></a>
-            <a href="#"><i class="fas fa-2x fa-at"></i></a>
+            <a href="https://github.com/annieqxx"><i class="fab fa-2x fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/annie-qin-0127/"><i class="fab fa-2x fa-linkedin"></i></a>
+            <a href="&#097;&#110;&#110;&#105;&#101;&#113;&#120;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="fas fa-2x fa-at"></i></a>
         </div>
     </header>
 
    <!--  landing page -->
-    <div>
-        <div id = "mySketch"></div>
+    <main>
+        <section id="landing">
+            <div id = "mySketch"></div>
 
-        <div class='console-container'>
-            <p id="hello">Hello World! Welcome!</p>
-            <h1>I am <span id="name">Annie Qin.</span></h1>
-            <span>a </span>
-            <span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;</div>
-        </div>
+            <div class='console-container'>
+                <p id="hello">Hello World! Welcome!</p>
+                <h1>I am <span id="name">Annie Qin.</span></h1>
+                <span>a </span>
+                <span id='text'></span>
+                <div class='console-underscore' id='console'>&#95;</div>
+            </div>
 
-        <div class="arrow">
-                <span></span>
-                <span></span>
-                <span></span>  
-        </div>
-    </div>
+            <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>  
+            </div>
+        </section>
 
-    <!-- project page -->
-    <section id="projects">
-        
-    </section>
+        <!-- project page -->
+        <section class="project" id="projects">
+            <div id="coding">
+                <div id="element_tower" class="section">
+                    <p class="title">Coding Demos</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RNdy2PIJCi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="description">Element Tower <br> A tower defense game that combined the game stratgy of Kingdom Rush and Dota AutoChess. Enpowered by Unity Engine, and implemented by C#. Project is open source and the code has been selected for Github Arctic Valut 2020. <br> <a href="https://github.com/annieqxx/ElementTower">Explore More</a></p>
+                </div> <!-- video demos -->
+                <div class="section">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sRXuX_tjzx0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="description">Restaurant Tinder <br> A tinder like web app that intended to help a group of people to decide where to eat easier. <br> <a href="https://github.com/annieqxx/Restuarant-tinder">Explore More</a></p>
+                </div>
+                <div class="section">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T61yQB0HUwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="description">Social Network Data Visualization <br> A data visualization that developed use Unity Engine and C#, intending to assist develop an immersive experience on interactive data visulization use Unity Engine.</p>
+                </div>
+                <div class="section">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TQ_hsMpUjSk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="description">StackOverflow Developer Survey 2019 Data Visualization <br> A web app that created an interactive data visualization of the big data set that contains 19k of datas from StackOverflow Developer Survey 2019, intending to give people a better insight regarding the survey result and help people analysis the data easier. <br> <a href="https://github.com/annieqxx/StackOverflow-Developer-Survey-2019-Result-Data-Visualization">Explore More</a></p>
+                </div>
+
+            </div>
+            <div class="section" id="design">
+                <p class="title">Design(coming soon!)</p>
+            </div> <!-- projects cover pages -->
+            <div class="section" id="photography">
+                <p class="title">Phorography (coming soon!)</p>
+            </div> <!-- images using layout 2-3 sets-->
+            <div class="section" id="others">
+                <p class="title">Others (coming soon!)</p>
+            </div> <!-- images using layout -->
+        </section>
+    </main>
+    <footer>
+        <h2>Annie's Protfolio</h2>
+        <p>Hello again! Thanks for visiting my portfolio page! If you want to know more about me, please <a href="about_section/index.html">click here</a>. If you want to contact me, please click on the icons of ways you want to reach me out on the top this website! Thanks!!</p>
+    </footer>
     
 
 	<!-- <div id="page">
@@ -107,6 +144,15 @@
     
     </div>
  -->
+<!--  <script>
+    //const ScrollReveal = require('scrollreveal')
+    ScrollReveal().reveal('#landing')
+    // ScrollReveal({ reset: true });
+    // ScrollReveal('.section', { interval: 200 });
+ 
+</script> -->
+
     <script src="index.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,160 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+/*
+#mySketch {
+	height: 1000px
+}*/
+
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/*img {
+	max-width:100%;
+}*/
+
+header{
+	background: #111;
+	color: white;
+	text-decoration: none;
+	width: 95%;
+	height: 80px;
+	margin:auto;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	padding-bottom: 80px;
+}
+
+header div{
+	flex: 1;
+	text-align: center;
+	padding-top: 30px;
+	text-decoration: none;
+}
+
+header div a{
+	text-decoration: none;
+	color: white;
+}
+
+#headername{
+	text-align: left;
+	padding-left: 80px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 25px;
+}
+
+#meun a{
+	padding-right: 10px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: white;
+}
+
+
+#socialmedia{
+	padding-top: 25px;
+	text-align: right;
+	padding-right: 80px;
+}
+
+#socialmedia a{
+	padding-left: 15px;
+	text-decoration: underline;
+}
+
+i{
+	color: white;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+body {
+  background: #111;
+}
+
+p{
+	color: white;
+
+}
+
+
+main{
+	width: 70%;
+	display: flex;
+	height: auto;
+	margin-left: 50px;
+}
+
+img{
+	padding: 50px;
+	margin-top: 80px;
+	flex: 1;
+}
+
+#description{
+	font-family: 'Andika New Basic', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	padding-top: 130px;
+	padding-left: 80px;
+	padding-bottom: 20px;
+	flex: 1;
+}
+
+footer{
+	display: block;
+	flex-shrink: 0;
+	width: 90%;
+	margin: auto;
+	background: #050A1F;
+	padding: 80px;
+	display: flex;
+	color: white;
+}
+
+footer h2{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 40px;
+	flex: 1;
+	padding-left: 30px;
+}
+
+footer p{
+	font-family: 'Andika New Basic', sans-serif;
+	font-size: 20px;
+	flex: 2;
+	line-height: 30px;
+}
+
+footer a{
+	color: white;
+}
+
+footer a:hover{
+	color: lightskyblue;
+    font-size: 30px;
+}
+
+header a:hover{
+	color: lightskyblue;
+    font-size: 30px;
+}
+
+#resume{
+	color: white;
+}
+
+#resume:hover{
+	color: lightskyblue;
+    font-size: 30px;
+}
+
+

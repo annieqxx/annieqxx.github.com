@@ -16,12 +16,16 @@ img {
 }
 
 header{
+	background: #111;
 	color: white;
 	text-decoration: none;
 	width: 95%;
 	height: 80px;
 	margin:auto;
 	display: flex;
+	position: fixed;
+	z-index: 2;
+
 }
 
 header div{
@@ -50,7 +54,9 @@ header div a{
 	font-family: 'Andika New Basic', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
+	color: white;
 }
+
 
 #socialmedia{
 	padding-top: 25px;
@@ -66,6 +72,12 @@ header div a{
 i{
 	color: white;
 }
+
+
+#landing{
+z-index: -2;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
 body {
@@ -110,9 +122,10 @@ body {
 
 .arrow{
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%,-90%);
+    transform: translate(-50%,-80%);
+    z-index: -1;
 }
 .arrow span{
     display: block;
@@ -144,9 +157,119 @@ body {
     }
 }
 
-#projects{
-	height: 100%;
+p{
+	color: white;
+
 }
+
+#projects{
+	margin: auto;
+	width: 80%;
+	
+	/*height: 1000px;*/
+}
+
+/*html.sr .project {
+    visibility: hidden;
+}*/
+
+.section{
+ /* transition: all .65s;*/
+  opacity: 0;
+}
+
+/*.active,
+.section:first-child{
+  opacity: 1;
+}*/
+
+iframe{
+	padding-top: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
+    height: 500px;
+}
+
+.title{
+	padding-top: 20px;
+	font-size: 40px;
+	font-family: 'Noto Sans TC', sans-serif;
+	text-align: left;
+}
+
+.title:hover{
+    color: lightskyblue;
+    font-size: 50px;
+}
+
+main{
+	margin-bottom: 50px;
+}
+
+.description{
+	display: block;
+	text-align: left;
+	width: 70%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Andika New Basic', sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.description a{
+	color: white;
+	padding-top: 20px;
+}
+
+.description a:hover{
+	font-size: 25px;
+}
+
+footer{
+	display: block;
+	flex-shrink: 0;
+	width: 90%;
+	margin: auto;
+	background: #050A1F;
+	padding: 80px;
+	display: flex;
+	color: white;
+}
+
+footer h2{
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 40px;
+	flex: 1;
+	padding-left: 30px;
+}
+
+footer p{
+	font-family: 'Andika New Basic', sans-serif;
+	font-size: 20px;
+	flex: 2;
+	line-height: 30px;
+}
+
+footer a{
+	color: white;
+}
+
+footer a:hover{
+	color: lightskyblue;
+    font-size: 30px;
+}
+
+header a:hover{
+	color: lightskyblue;
+    font-size: 30px;
+}
+
+
+
 
 /************* End CSS RESET **************/
 
