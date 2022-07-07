@@ -43,7 +43,7 @@ div{
     padding-top: 40px;
 }
 
-img{
+video, img{
     display: block;
     margin: auto;
     margin-bottom: 20px;
