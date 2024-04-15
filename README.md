@@ -1,7 +1,7 @@
 # Github Profile -> annieqxx.com 
 Github Portfolio;
 Please reference to annieqxx.com 
-Please view it on a display that is 13-inch or beyond
+Please view it on a display that is 13-inch
 Mobile version is currently not avaliable, but coming soon!
 
 
