@@ -1,110 +1,409 @@
-<!doctype html>
-<html class="sr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Annie Qin's Portfolio</title>
-
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Bitter:700' rel='stylesheet' type='text/css'>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&family=Noto+Sans+TC&display=swap" rel="stylesheet">
-<link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-
-<!-- Needed for mobile devices to not zoom out automatically-->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie Qin's blogpage</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        /* Header and Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: #ffffff;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            color: #3498db;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        
+        .intro {
+            margin-bottom: 60px;
+        }
+        
+        .greeting {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .intro h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        
+        .intro h1 span {
+            color: #3498db;
+        }
+        
+        .role {
+            font-size: 36px;
+        }
+        
+        /* Arrow indicators */
+        .scroll-indicator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 0;
+        }
+        
+        .arrow {
+            width: 40px;
+            height: 40px;
+            margin: 5px 0;
+            border-bottom: 4px solid #3498db;
+            border-right: 4px solid #3498db;
+            transform: rotate(45deg);
+            animation: bounce 2s infinite;
+        }
+        
+        .arrow:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .arrow:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes bounce {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        /* Blog Section */
+        .blog-section {
+            margin-top: 100px;
+        }
+        
+        .blog-section h2 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .blog-post {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+        
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .blog-post-content {
+            padding: 20px;
+        }
+        
+        .blog-post h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .blog-post p {
+            color: #cccccc;
+            margin-bottom: 15px;
+        }
+        
+        .blog-post .date {
+            color: #3498db;
+            font-size: 14px;
+        }
+        
+        .blog-post .read-more {
+            display: inline-block;
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 100px;
+            color: #777777;
+        }
+        
+        /* Purple heart animation */
+        .heart-container {
+            position: absolute;
+            top: 220px;
+            left: 20px;
+            opacity: 0.7;
+        }
+        
+        .heart {
+            font-size: 40px;
+            color: #9b59b6;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            nav ul li {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+            
+            .intro h1 {
+                font-size: 48px;
+            }
+            
+            .role {
+                font-size: 24px;
+            }
+            
+            .social-icons {
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
-
 <body>
     <header>
-        <div id="headername"><a href="#landing">Annie Qin</a></div>
-        <div id="meun">
-            <a href="#projects">Projects</a>
-            <a href="about_section/index.html">About</a>
-            <a href="blog/index.html">Blog</a>
-        </div>
-        <div id="socialmedia">
-            <a href="https://github.com/annieqxx"><i class="fab fa-2x fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/annie-qin-0127/"><i class="fab fa-2x fa-linkedin"></i></a>
-            <a href="&#097;&#110;&#110;&#105;&#101;&#113;&#120;&#120;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="fas fa-2x fa-at"></i></a>
+        <div class="logo">Annie Qin</div>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+            </a>
+            <a href="#" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a href="#" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                </svg>
+            </a>
         </div>
     </header>
-
-   <!--  landing page -->
+    
     <main>
-        <section id="landing">
-            <div id = "mySketch"></div>
-
-            <div class='console-container'>
-                <p id="hello">Hello World! Welcome!</p>
-                <h1>I am <span id="name">Annie Qin.</span></h1>
-                <span>a </span>
-                <span id='text'></span>
-                <div class='console-underscore' id='console'>&#95;</div>
-            </div>
-
-            <div class="arrow">
-                    <span></span>
-                    <span></span>
-                    <span></span>  
-            </div>
+        <section class="intro">
+            <div class="greeting">Hello! Welcome to Annie's BlogSpace!</div>
         </section>
-
-        <!-- project page -->
-        <section class="project" id="projects">
-            <div id="coding">
-                <div id="element_tower" class="section">
-                    <p class="title">Coding Demos</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RNdy2PIJCi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="description">Element Tower <br> A tower defense game that combined the game stratgy of Kingdom Rush and Dota AutoChess. Enpowered by Unity Engine, and implemented by C#. Project is open source and the code has been selected for Github Arctic Valut 2020. <br> <a href="https://github.com/annieqxx/ElementTower">Explore More</a></p>
-                </div> <!-- video demos -->
-                <div class="section">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sRXuX_tjzx0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="description">Restaurant Tinder <br> A tinder like web app that intended to help a group of people to decide where to eat easier. <br> <a href="https://github.com/annieqxx/Restuarant-tinder">Explore More</a></p>
+        
+        <!-- Purple heart animation -->
+        <div class="heart-container">
+            <div class="heart">💜</div>
+        </div>
+        
+        <section id="blog" class="blog-section">
+            <h2>Writings</h2>
+            <div class="blog-posts">
+                <!-- Blog post 1 -->
+                <div class="blog-post">
+                    <!-- <img src="/api/placeholder/400/320" alt="Blog post image"> -->
+                    <div class="blog-post-content">
+                        <span class="date">April 3, 2025</span>
+                        <h3>Building Responsive Web Applications</h3>
+                        <p>Exploring modern techniques for creating responsive and accessible web applications that work across all devices.</p>
+                        <a href="#" class="read-more">Read more →</a>
+                    </div>
                 </div>
-                <div class="section">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TEFMyEtyLWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="description">Fire Emergency Contact App<br> A mobile app that allow users call emergency contact in extreme situation when there is no network or no signals.<br> <a href="https://docs.google.com/presentation/d/16tLmkudhhwRBxvW28Z6V6Lib_k0HxyrHYB7GKA2piVQ/edit?usp=sharing">Explore More</a></p>
+                
+                <!-- Blog post 2 -->
+                <div class="blog-post">
+                    <!-- <img src="/api/placeholder/400/320" alt="Blog post image"> -->
+                    <div class="blog-post-content">
+                        <span class="date">March 27, 2025</span>
+                        <h3>JavaScript Performance Optimization</h3>
+                        <p>Deep dive into techniques for optimizing JavaScript code performance in modern web browsers.</p>
+                        <a href="#" class="read-more">Read more →</a>
+                    </div>
                 </div>
-                <div class="section">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T61yQB0HUwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="description">Social Network Data Visualization <br> A data visualization that developed use Unity Engine and C#, intending to assist develop an immersive experience on interactive data visulization use Unity Engine.</p>
+                
+                <!-- Blog post 3 -->
+                <div class="blog-post">
+                    <!-- <img src="/api/placeholder/400/320" alt="Blog post image"> -->
+                    <div class="blog-post-content">
+                        <span class="date">March 18, 2025</span>
+                        <h3>Implementing Dark Mode with CSS Variables</h3>
+                        <p>A guide to creating smooth dark mode transitions using CSS custom properties and JavaScript.</p>
+                        <a href="#" class="read-more">Read more →</a>
+                    </div>
                 </div>
-                <div class="section">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TQ_hsMpUjSk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="description">StackOverflow Developer Survey 2019 Data Visualization <br> A web app that created an interactive data visualization of the big data set that contains 19k of datas from StackOverflow Developer Survey 2019, intending to give people a better insight regarding the survey result and help people analysis the data easier. <br> <a href="https://github.com/annieqxx/StackOverflow-Developer-Survey-2019-Result-Data-Visualization">Explore More</a></p>
+                
+                <!-- Blog post 4 -->
+                <div class="blog-post">
+                    <!-- <img src="/api/placeholder/400/320" alt="Blog post image"> -->
+                    <div class="blog-post-content">
+                        <span class="date">March 5, 2025</span>
+                        <h3>The Future of Web Development with AI</h3>
+                        <p>Exploring how artificial intelligence is transforming the landscape of web development and what developers need to know.</p>
+                        <a href="#" class="read-more">Read more →</a>
+                    </div>
                 </div>
-                <div class="section">
-                    <p class="description"> Reborn Project Demos please click <a href="reborn.html">Explore More</a></p>
-                </div>
-
             </div>
-            <div class="section" id="design">
-                <p class="title">Design(coming soon!)</p>
-            </div> <!-- projects cover pages -->
-            <div class="section" id="photography">
-                <p class="title">Phorography (coming soon!)</p>
-            </div> <!-- images using layout 2-3 sets-->
-            <div class="section" id="others">
-                <p class="title">Others (coming soon!)</p>
-            </div> <!-- images using layout -->
         </section>
     </main>
+    
     <footer>
-        <h2>Annie's Protfolio</h2>
-        <p>Hello again! Thanks for visiting my portfolio page! If you want to know more about me, please <a href="about_section/index.html">click here</a>. If you want to contact me, please click on the icons of ways you want to reach me out on the top this website! Thanks!!</p>
+        <p>© 2025 Annie Qin. All rights reserved.</p>
     </footer>
     
-
-    <script src="index.js"></script>
-
+    <script>
+        // Simple JavaScript to add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add animation for elements as they scroll into view
+            const animateOnScroll = function() {
+                const blogPosts = document.querySelectorAll('.blog-post');
+                
+                blogPosts.forEach(post => {
+                    const postPosition = post.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if (postPosition < screenPosition) {
+                        post.style.opacity = '1';
+                        post.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Set initial state for animation
+            const blogPosts = document.querySelectorAll('.blog-post');
+            blogPosts.forEach(post => {
+                post.style.opacity = '0';
+                post.style.transform = 'translateY(20px)';
+                post.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            // Run animation on load and scroll
+            window.addEventListener('load', animateOnScroll);
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
 </body>
 </html>
